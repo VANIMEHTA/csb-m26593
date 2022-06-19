@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Space Mono", monospace;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1em;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 80vh;
+}
+#left {
+  max-width: 30%;
+}
+.bill {
+  background-color: hsl(180, 20%, 94%);
+  border-radius: 5px;
+  border-color: transparent;
+  width: 38vw;
+  height: 6vh;
+}
+.dollar-img {
+  justify-self: center;
+  height: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  gap: 1em;
+  max-width: 20%;
+  padding: 3%;
+}
+.btn {
+  background-color: hsl(183, 100%, 15%);
+  padding-right: 4%;
+  height: 10vh;
+  width: 10vw;
+  color: hsl(189, 41%, 97%);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:focus {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+  border-color: transparent;
+}
+
+#customTip {
+  width: 10vw;
+  padding-right: 4%;
+  border-radius: 4px;
+  background-color: hsl(180, 69%, 97%);
+  border-color: transparent;
+}
+#customTip:focus {
+  border-color: hsl(185, 41%, 84%);
+}
+#right {
+  padding: 1em;
+  background-color: hsl(183, 100%, 15%);
+  width: 40%;
+  border-radius: 5%;
+  color: hsl(188, 37%, 70%);
+}
+#people {
+  padding-right: 4%;
+  border-radius: 4px;
+  background-color: hsl(180, 20%, 94%);
+  height: 6vh;
+  border-color: transparent;
+  width: 38vw;
+}
+.tipbutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#totaltip {
+  padding-left: 120px;
+  font-weight: bold;
+  font-size: 40px;
+}
+#totalamount {
+  padding-left: 175px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.reset {
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: turquoise;
+  width: 25vw;
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  height: 6vh;
+  margin-top: 2em;
+  margin-left: 1em;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Tip-Calculator</title>
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Outfit:wght@200&family=Overpass:wght@100&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container" id="main-div">
+      <div id="left">
+        <div>
+          <p>Bill</p>
+          <input class="bill" type="number" id="bill-col" /><img
+            class="dollar-img"
+            src="/dollar-sign.svg"
+          />
+        </div>
+        <p>Select Tip %</p>
+        <div class="grid" id="tip">
+          <button class="btn" value="0.05">5%</button>
+          <button class="btn" value="0.1">10%</button>
+          <button class="btn" value="0.15">15%</button>
+          <button class="btn" value="0.25">25%</button>
+          <button class="btn" value="0.25">50%</button>
+
+          <input type="number" placeholder="Custom" id="customTip" />
+        </div>
+        <div id="people-container">
+          <p>No. of people</p>
+          <input type="number" placeholder="1" id="people" />
+        </div>
+      </div>
+      <div id="right">
+        <div class="tip-amount">
+          <h3>Tip Amount <span id="totaltip">$</span></h3>
+          <p>/per person</p>
+        </div>
+        <br />
+        <div>
+          <h3>Total <span id="totalamount">$</span></h3>
+          <p>
+            /per person
+          </p>
+        </div>
+        <div class="reset-container">
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
