@@ -24,22 +24,18 @@ customTip.addEventListener("input", tipCustomVal);
 people.addEventListener("input", setPeopleVal);
 reset.addEventListener("click", handleReset);
 
-tipchoosen.forEach((btn) => {
-  btn.addEventListener("click", handleClick);
+tipchoosen.forEach(function (val) {
+  val.addEventListener("click", handleClick);
 });
-
 function handleClick(event) {
-  if (event.target.innerHTML === btn.innerHTML) {
-    tipVal = tipchoosen.value;
-    // console.log(buttonVal)
-    // making the innerHTML of a button to be a string,
-    // then divide by 100 to make a percent because parsefloat cannot read % in integer.
-    console.log(tipVal);
-  }
-
-  customTip.value = "";
+  tipchoosen.forEach(function (val) {
+    if (event.target.innerHTML === val.innerHTML) {
+      tipVal = parseFloat(val.innerHTML) / 100;
+    }
+  });
   calculate();
 }
+
 
 function tipCustomVal() {
   tipVal = parseFloat(customTip.value / 100);
